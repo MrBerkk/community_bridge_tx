@@ -180,7 +180,7 @@ tasks:
   # OX resources
   - action: download_file
     path: ./tmp/ox_lib.zip
-    url: https://github.com/CommunityOx/ox_lib/releases/latest/download/ox_lib.zip
+    url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
 
   - action: unzip
     dest: ./resources/[ox]
@@ -196,7 +196,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/oxmysql.zip
-    url: https://github.com/CommunityOx/oxmysql/releases/latest/download/oxmysql.zip
+    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
 
   - action: unzip
     dest: ./resources/[ox]
@@ -204,7 +204,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/ox_inventory.zip
-    url: https://github.com/TheOrderFivem/ox_inventory/releases/latest/download/ox_inventory.zip
+    url: https://github.com/MrNewb/ox_inventory/releases/latest/download/ox_inventory.zip
 
   - action: unzip
     dest: ./resources/[ox]
@@ -382,14 +382,8 @@ tasks:
   - action: remove_path
     path: ./resources/[ox]/ox_inventory/web/images/gimp
 
-  - action: download_github
-    dest: ./resources/[addon]/rpemotes-reborn
-    ref: master
-    src: https://github.com/alberttheprince/rpemotes-reborn
-
   - action: waste_time # prevent github throttling
     seconds: 4
-
 
   - action: download_github
     dest: ./resources/[addon]/mrc-storage
@@ -421,13 +415,6 @@ tasks:
     dest: ./resources/[voice]/pma-voice
     ref: main
     src: https://github.com/AvarianKnight/pma-voice
-
-  - action: download_file
-    path: ./tmp/mm_radio.zip
-    url: https://github.com/SOH69/mm_radio/releases/latest/download/mm_radio.zip
-  - action: unzip
-    dest: ./resources/[voice]
-    src: ./tmp/mm_radio.zip
 
     # Assets
   - action: download_github
